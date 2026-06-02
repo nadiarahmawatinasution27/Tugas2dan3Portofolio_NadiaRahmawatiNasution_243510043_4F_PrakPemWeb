@@ -75,13 +75,13 @@ main {
 }
 
 main h1 {
-    font-size: 36px;
+    font-size: 38px;
     margin-bottom: 15px;
     color: #ef750a;
 }
 
 main p {
-    font-size: 16px;
+    font-size: 20px;
     color: #3b5c4e;
     max-width: 800px;
     margin-bottom: 20px;
