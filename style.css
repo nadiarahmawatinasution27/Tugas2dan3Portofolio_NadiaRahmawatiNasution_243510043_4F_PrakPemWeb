@@ -1,0 +1,359 @@
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2d4a3e;
+    line-height: 1.6;
+}
+
+.tekswarna {
+    color: #1c706e;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 7%;
+    height: 80px;
+    background-color: #63a8aa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 2px solid #eef0eb;
+    box-shadow: 0 2px 10px rgba(45, 74, 62, 0.05);
+}
+
+.h1judul {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d4a3e;
+}
+
+header ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+header ul li a {
+    font-size: 18px;
+    color: #1e4836;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ff9233; 
+}
+
+main {
+    min-height: 100vh;
+    padding: 120px 10% 60px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.warnaalternatif {
+    background-color: #f0f4f1;
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ef750a;
+}
+
+main p {
+    font-size: 16px;
+    color: #3b5c4e;
+    max-width: 800px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#home img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #2d4a3e;
+    box-shadow: 0 8px 24px rgba(45, 74, 62, 0.1);
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.judullist {
+    width: 100%;
+    max-width: 750px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #2d4a3e;
+}
+
+main ul, main ol {
+    width: 100%;
+    max-width: 750px;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px 20px 20px 40px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(45, 74, 62, 0.03);
+    border: 1px solid #eef0eb;
+}
+
+main ul li, main ol li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2d4a3e;
+}
+
+main ol li p {
+    font-size: 14px;
+    color: #567d6c;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+main .kontainergalery {
+    display: flex;
+    gap: 20px;
+    background: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: none;
+    border: none;
+}
+
+main .kontainergalery li {
+    flex: 1;
+    list-style-type: none;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #eef0eb;
+    box-shadow: 0 4px 12px rgba(45, 74, 62, 0.03);
+}
+
+main .kontainergalery li img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+main .kontainergalery li p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #2d4a3e;
+}
+
+main .kontenkontak {
+    list-style-type: square;
+}
+
+main ol.kontainerprojectgridol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    padding: 0;
+    list-style-type: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+main ol.kontainerprojectgridol li.kartuprojectli {
+    list-style-type: none;
+    background-color: #ffffff;
+    border: 2px solid #eef0eb;
+    border-radius: 16px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(45, 74, 62, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main ol.kontainerprojectgridol li.kartuprojectli:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(45, 74, 62, 0.1);
+    border-color: #ff9233;
+}
+
+main ol.kontainerprojectgridol li.kartuprojectli img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eef0eb;
+    background-color: #fcfbf7;
+}
+
+main ol.kontainerprojectgridol li.kartuprojectli h3 {
+    font-size: 20px;
+    color: #2d4a3e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+main ol.kontainerprojectgridol li.kartuprojectli p {
+    font-size: 14px;
+    color: #567d6c;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+main ol.kontainerprojectgridol li.kartuprojectli a.tombolview {
+    margin-top: auto;
+    background-color: #2d4a3e;
+    color: #ffffff;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+main ol.kontainerprojectgridol li.kartuprojectli a.tombolview:hover {
+    background-color: #ff9233;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+main ul.kontainerbiodatadasar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 750px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 25px;
+    list-style-type: none;
+}
+
+main ul.kontainerbiodatadasar > li {
+    flex: 1;
+    min-width: 320px;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.subjudulinternal {
+    text-align: left;
+    font-size: 16px;
+    color: #2d4a3e;
+    margin-bottom: 10px;
+}
+
+main ul.kontainerbiodatadasar li ol.listbiodatateks {
+    background-color: #ffffff;
+    border: 1px solid #eef0eb;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(45, 74, 62, 0.03);
+    list-style-type: none;
+    max-width: 100%;
+}
+
+main ul.kontainerbiodatadasar li ol.listbiodatateks li {
+    list-style-type: none;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed rgba(72, 209, 204, 0.2);
+    padding-bottom: 6px;
+}
+
+main ul.kontainerbiodatadasar li ol.listbiodatateks li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+main ul.kontainerbiodatadasar li ol.listbiodatateks li p {
+    font-size: 15px;
+    color: #2d4a3e;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+main ul.kontainerbiodatadasar li ol.listbiodatafoto {
+    background-color: #ffffff;
+    border: 1px solid #eef0eb;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(45, 74, 62, 0.03);
+    list-style-type: none;
+    max-width: 100%;
+    height: auto;
+}
+
+main ul.kontainerbiodatadasar li ol.listbiodatafoto li {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+main ul.kontainerbiodatadasar li ol.listbiodatafoto li img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.fotokampusbaru {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 0;
+    box-shadow: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
